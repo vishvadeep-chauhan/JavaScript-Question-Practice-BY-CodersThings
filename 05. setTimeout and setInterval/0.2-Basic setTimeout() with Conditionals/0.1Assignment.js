@@ -7,7 +7,7 @@
 // ------------------------------------------------------
 
 function greetUser() {
-  let currentHour = Date().getHours();
+  let currentHour = new Date().getHours();
 
   setTimeout(() => {
     if (currentHour < 12) {
@@ -15,7 +15,7 @@ function greetUser() {
     } else {
       console.log("good Day");
     }
-  }, 20000);
+  }, 2000);
 }
 
 greetUser();
